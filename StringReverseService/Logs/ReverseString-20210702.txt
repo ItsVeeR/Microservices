@@ -1,0 +1,37 @@
+2021-07-02T01:55:43.6056182+02:00 0HM9STEUFRO1K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44377/api/StringReversal   (ca22a1cb)
+2021-07-02T01:55:43.6056183+02:00 0HM9STEUFRO1J:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:65019/  0 (ca22a1cb)
+2021-07-02T01:55:43.6790753+02:00 0HM9STEUFRO1J:00000001 [INF] Request finished in 48.5409ms 200  (791a596a)
+2021-07-02T01:55:43.8222417+02:00 0HM9STEUFRO1K:00000001 [INF] Route matched with "{action = \"ListAll\", controller = \"StringReversal\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ListAll()" on controller "StringReverseService.Controllers.StringReversalController" ("StringReverseService"). (122b2fdf)
+2021-07-02T01:55:43.9318614+02:00 0HM9STEUFRO1K:00000001 [INF] Executing action method "StringReverseService.Controllers.StringReversalController.ListAll (StringReverseService)" - Validation state: Valid (dad538d7)
+2021-07-02T01:55:44.0896129+02:00 0HM9STEUFRO1K:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"InputStringContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-07-02T01:55:44.3227123+02:00 0HM9STEUFRO1K:00000001 [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[InputValue], [i].[RequestedOn]
+FROM [InputStrings] AS [i]" (0723d8ff)
+2021-07-02T01:55:44.3512784+02:00 0HM9STEUFRO1K:00000001 [INF] Executed action method "StringReverseService.Controllers.StringReversalController.ListAll (StringReverseService)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 416.1522ms. (50a9e262)
+2021-07-02T01:55:44.3586708+02:00 0HM9STEUFRO1K:00000001 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[StringReverseService.Models.InputString, StringReverseService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2021-07-02T01:55:44.4117720+02:00 0HM9STEUFRO1K:00000001 [INF] Executed action "StringReverseService.Controllers.StringReversalController.ListAll (StringReverseService)" in 586.1879ms (afa2e885)
+2021-07-02T01:55:44.4182572+02:00 0HM9STEUFRO1K:00000001 [INF] Request finished in 817.5566ms 200 application/json; charset=utf-8 (791a596a)
+2021-07-02T01:55:58.7808400+02:00 0HM9STEUFRO1J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44377/api/StringReversal/98B9081E-6B59-42E9-8AF0-1FD602B3D2E6   (ca22a1cb)
+2021-07-02T01:55:58.7891047+02:00 0HM9STEUFRO1J:00000002 [INF] Route matched with "{action = \"GetByRequestId\", controller = \"StringReversal\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetByRequestId(System.Nullable`1[System.Guid])" on controller "StringReverseService.Controllers.StringReversalController" ("StringReverseService"). (122b2fdf)
+2021-07-02T01:55:58.7985904+02:00 0HM9STEUFRO1J:00000002 [INF] Executing action method "StringReverseService.Controllers.StringReversalController.GetByRequestId (StringReverseService)" - Validation state: Valid (dad538d7)
+2021-07-02T01:56:00.3953193+02:00 0HM9STEUFRO1J:00000002 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"InputStringContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-07-02T01:56:00.4201440+02:00 0HM9STEUFRO1J:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[InputValue], [e].[RequestedOn]
+FROM [InputStrings] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2021-07-02T01:56:00.4211639+02:00 0HM9STEUFRO1J:00000002 [WRN] No result found for id 98b9081e-6b59-42e9-8af0-1fd602b3d2e6 . (a185e89d)
+2021-07-02T01:56:00.4212281+02:00 0HM9STEUFRO1J:00000002 [INF] Executed action method "StringReverseService.Controllers.StringReversalController.GetByRequestId (StringReverseService)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1622.5781ms. (50a9e262)
+2021-07-02T01:56:00.4214280+02:00 0HM9STEUFRO1J:00000002 [INF] Executing ObjectResult, writing value of type '"null"'. (8a1b66c8)
+2021-07-02T01:56:00.4216001+02:00 0HM9STEUFRO1J:00000002 [INF] Executed action "StringReverseService.Controllers.StringReversalController.GetByRequestId (StringReverseService)" in 1632.4284ms (afa2e885)
+2021-07-02T01:56:00.4217599+02:00 0HM9STEUFRO1J:00000002 [INF] Request finished in 1640.9766ms 204  (791a596a)
+2021-07-02T11:47:22.8962048+02:00 0HM9T7PI3EOGB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44377/api/StringReversal   (ca22a1cb)
+2021-07-02T11:47:23.0266094+02:00 0HM9T7PI3EOGB:00000001 [INF] Route matched with "{action = \"ListAll\", controller = \"StringReversal\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ListAll()" on controller "StringReverseService.Controllers.StringReversalController" ("StringReverseService"). (122b2fdf)
+2021-07-02T11:47:23.1054808+02:00 0HM9T7PI3EOGB:00000001 [INF] Executing action method "StringReverseService.Controllers.StringReversalController.ListAll (StringReverseService)" - Validation state: Valid (dad538d7)
+2021-07-02T11:47:23.2340787+02:00 0HM9T7PI3EOGB:00000001 [INF] Entity Framework Core "2.1.14-servicing-32113" initialized '"InputStringContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2021-07-02T11:47:23.4216633+02:00 0HM9T7PI3EOGB:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[InputValue], [i].[RequestedOn]
+FROM [InputStrings] AS [i]" (0723d8ff)
+2021-07-02T11:47:23.4390988+02:00 0HM9T7PI3EOGB:00000001 [INF] Executed action method "StringReverseService.Controllers.StringReversalController.ListAll (StringReverseService)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 331.5936ms. (50a9e262)
+2021-07-02T11:47:23.4435465+02:00 0HM9T7PI3EOGB:00000001 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[StringReverseService.Models.InputString, StringReverseService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2021-07-02T11:47:23.4840846+02:00 0HM9T7PI3EOGB:00000001 [INF] Executed action "StringReverseService.Controllers.StringReversalController.ListAll (StringReverseService)" in 455.1875ms (afa2e885)
+2021-07-02T11:47:23.4872746+02:00 0HM9T7PI3EOGB:00000001 [INF] Request finished in 594.2464ms 200 application/json; charset=utf-8 (791a596a)
