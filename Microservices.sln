@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationServices", "A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGateway", "APIGateway\APIGateway.csproj", "{F774B42A-9972-4712-ADF1-DA178D652949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontApplication", "FrontApplication\FrontApplication.csproj", "{5634E931-D794-4A29-827D-C844A3E85114}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{6ECB4341-A99D-4BAE-AEBC-B3EEB629A435}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{F774B42A-9972-4712-ADF1-DA178D652949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F774B42A-9972-4712-ADF1-DA178D652949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F774B42A-9972-4712-ADF1-DA178D652949}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5634E931-D794-4A29-827D-C844A3E85114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5634E931-D794-4A29-827D-C844A3E85114}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5634E931-D794-4A29-827D-C844A3E85114}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5634E931-D794-4A29-827D-C844A3E85114}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
