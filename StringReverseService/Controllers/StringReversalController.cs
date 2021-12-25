@@ -20,7 +20,7 @@ namespace StringReverseService.Controllers
         private readonly IInputStringRepository inputStringRepository;
         private readonly ILogger logger;
         //private readonly IHubContext<NotificationsHub> hubContext;
-        IHubContext hub = GlobalHost.ConnectionManager.GetHubContext<NotificationsHub>();
+        //IHubContext hub = GlobalHost.ConnectionManager.GetHubContext<NotificationsHub>();
          
         public StringReversalController(IInputStringRepository inputStringRepository, 
                                         ILogger<StringReversalController> logger)
@@ -75,7 +75,7 @@ namespace StringReverseService.Controllers
                 scope.Complete();
                 var reversed = Business.Reverse(value.InputValue); 
 
-                hub.Clients.All.NotifyAllClients();
+                //hub.Clients.All.NotifyAllClients();
                 return new OkObjectResult(reversed); 
             }
         } 
