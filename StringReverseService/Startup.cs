@@ -28,15 +28,14 @@ namespace StringReverseService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+            services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             services.AddDbContext<InputStringContext>(o => o.UseSqlServer(Configuration.GetConnectionString("InputStringsDB")));
 
             services.AddTransient<IInputStringRepository, InputStringRepository>();
             services.AddSignalR();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "String Reversal API", Version = "v1" }); 
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "String Reversal API", Version = "v1" }); 
             });
             SetupAuth(services);
         }

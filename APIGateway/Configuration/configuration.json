@@ -1,23 +1,23 @@
 {
   "ReRoutes": [
-    {
-      "DownstreamPathTemplate": "/api/StringReversal/{everything}",
-      "DownstreamScheme": "https",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 44377
-        }
-      ],
-      "UpstreamPathTemplate": "/api/StringReversal/{everything}",
-      "UpstreamHttpMethod": [
-        "GET" 
-      ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "ApiSecurity",
-        "AllowedScopes": []
-      } 
-    }
+    //{
+    //  "DownstreamPathTemplate": "/api/StringReversal/{everything}",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 44377
+    //    }
+    //  ],
+    //  "UpstreamPathTemplate": "/api/StringReversal/{everything}",
+    //  "UpstreamHttpMethod": [
+    //    "GET" 
+    //  ],
+    //  "AuthenticationOptions": {
+    //    "AuthenticationProviderKey": "ApiSecurity",
+    //    "AllowedScopes": []
+    //  } 
+    //}
   ],
   "GlobalConfiguration": {
 
