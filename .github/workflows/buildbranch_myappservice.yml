@@ -6,9 +6,9 @@ name: Build and deploy ASP.Net Core app to Azure Web App - MyAppService
 on:
   push:
     branches:
-      - BuildBranch
+      - main
   workflow_dispatch:
-
+  
 jobs:
   build:
     runs-on: windows-latest
